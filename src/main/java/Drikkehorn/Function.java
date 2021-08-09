@@ -38,7 +38,7 @@ public class Function {
             @HttpTrigger(
                 name = "req",
                 methods = {HttpMethod.POST},
-                authLevel = AuthorizationLevel.ANONYMOUS)
+                authLevel = AuthorizationLevel.FUNCTION)
                 HttpRequestMessage<AdminUnitRequest> request,
             final ExecutionContext context) throws Exception {
         
